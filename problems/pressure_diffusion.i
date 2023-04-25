@@ -23,7 +23,12 @@
   [diffusion]
     type = DarcyPressure #Zero-gravity, divergence-free from Darcys law
     variable = pressure #Operate on the "pressure" variable from above 
-    permeability = 0.8451e-09 #(m^2) assumed permeability of the porous medium
+  []
+[]
+
+[Materials]
+  [filter]
+    type = PackedColumn  #Provides permeability and viscosity of water through packed 1mm spheres
   []
 []
 

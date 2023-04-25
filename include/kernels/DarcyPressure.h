@@ -18,8 +18,6 @@ protected:
   virtual ADRealVectorValue precomputeQpResidual() override;
 
   /// The reference variables which hold the value for K and mu
-  const Real & _permeability;
-  const Real & _viscosity;
+  const ADMaterialProperty<Real> & _permeability;
+  const ADMaterialProperty<Real> & _viscosity;
 };
-  
-

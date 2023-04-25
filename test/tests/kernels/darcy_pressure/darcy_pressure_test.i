@@ -10,6 +10,16 @@
   []
 []
 
+[Materials]
+  [filter]
+    type = PackedColumn
+    diameter = 2
+    viscosity = 1e-03
+    output_properties = 'permeability viscosity'
+    outputs = exodus
+  []
+[]
+
 [Kernels]
   [diffusion]
     type = DarcyPressure
